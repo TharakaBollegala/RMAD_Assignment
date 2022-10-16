@@ -40,19 +40,29 @@ const Assignment = () => {
     // 35 - 55 -> s
     // 35 - W
 
-    const marks = 75;
-    // If CONDITIONS
-    if (marks >= 75) {
-      console.log('Grade - A');
-    } else if (marks >= 65) {
-      console.log('Grade - B');
-    } else if (marks >= 55) {
-      console.log('Grade - C');
-    } else if (marks >= 35) {
-      console.log('Grade - S');
-    } else {
-      console.log('Grade - W');
-    }
+    const marks = 30;
+    // // If CONDITIONS
+    // if (marks >= 75) {
+    //   console.log('Grade - A');
+    // } else if (marks >= 65) {
+    //   console.log('Grade - B');
+    // } else if (marks >= 55) {
+    //   console.log('Grade - C');
+    // } else if (marks >= 35) {
+    //   console.log('Grade - S');
+    // } else {
+    //   console.log('Grade - W');
+    // }
+
+    marks >= 75
+      ? console.log('Grade - A')
+      : marks >= 65
+      ? console.log('Grade - B')
+      : marks >= 55
+      ? console.log('Grade - C')
+      : marks >= 35
+      ? console.log('Grade - S')
+      : console.log('Grade - W');
   };
 
   return (
