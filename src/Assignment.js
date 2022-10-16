@@ -7,15 +7,15 @@ const Assignment = () => {
   }, []);
 
   const functionOne = () => {
-    const name = 'Apple';
-    // If CONDITIONS
-    if (name === 'BlueBerry') {
-      console.log('Fruit 1', name);
-    } else if (name === 'Orange') {
-      console.log('Fruit 2', name);
-    } else {
-      console.log('Fruit 3', 'Not Available');
-    }
+    // const name = 'Apple';
+    // // If CONDITIONS
+    // if (name === 'BlueBerry') {
+    //   console.log('Fruit 1', name);
+    // } else if (name === 'Orange') {
+    //   console.log('Fruit 2', name);
+    // } else {
+    //   console.log('Fruit 3', 'Not Available');
+    // }
 
     //Ternary Operator
     // name === 'Orange'
@@ -33,12 +33,26 @@ const Assignment = () => {
     //     break;
     // }
 
-    const marks = 75;
+    // const marks = 75;
     // 75 -> A
     // 65 - 75 -> B
     // 55 - 65 -> C
     // 35 - 55 -> s
     // 35 - W
+
+    const marks = 75;
+    // If CONDITIONS
+    if (marks >= 75) {
+      console.log('Grade - A');
+    } else if (marks >= 65) {
+      console.log('Grade - B');
+    } else if (marks >= 55) {
+      console.log('Grade - C');
+    } else if (marks >= 35) {
+      console.log('Grade - S');
+    } else {
+      console.log('Grade - W');
+    }
   };
 
   return (
